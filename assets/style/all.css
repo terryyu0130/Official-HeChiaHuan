@@ -1037,6 +1037,9 @@ img {
     margin-right: 24px; }
   .contact-info .instagram {
     margin-left: 24px; }
+  @media (max-width: 1024px) {
+    .contact-info .text-md {
+      font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif; } }
 
 .fan-content {
   padding: 36px 0;
