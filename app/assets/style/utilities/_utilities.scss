@@ -16,6 +16,12 @@
         display: inline-block;
     }
 }
+.dn {
+    display: none;
+    @include mobile {
+        display: inline-block;
+    }
+}
 
 .dn-md {
     @include pad {

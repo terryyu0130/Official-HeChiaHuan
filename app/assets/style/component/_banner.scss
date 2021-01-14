@@ -8,9 +8,9 @@
     background-attachment: fixed;
     position: relative;
     .title-group {
-        width: 50%;
+        width: 100%;
         position: absolute;
-        top: 64px;
+        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
@@ -19,31 +19,50 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @include mobile {
-            width: 90%;
-        }
+        background-color: rgba(0, 0, 0, 0.4);
     }
     .bg-img {
-        width: 100%;
-        padding-top: 15%;
+        width: 50%;
+        padding-top: 8%;
         background-position: center center;
         background-repeat: no-repeat;
+        @include pad {
+            width: 70%;
+            padding-top: 12%;
+        }
+        @include mobile {
+            width: 85%;
+            padding-top: 15%;
+        }
     }
     .title {
         background-size: 100%;
-        background-color: rgba(250, 250, 250, 0.6);
         border-radius: $small-md;
+        margin-top: 80px;
+        @include pad {
+            margin-top: 56px;
+        }
+        @include mobile {
+            margin-top: 64px;
+        }
     }
     .subtitle {
         background-size: 80%;
+        padding-top: 5%;
     }
     .style {
         width: 50%;
-        background-size: 85%;
-        background-color: rgba(250, 250, 250, 0.5);
+        background-size: 50%;
+        // background-color: rgba(250, 250, 250, 0.5);
         border-radius: $small-md;
+        margin-top: 80px;
+        @include pad {
+            margin-top: 56px;
+            background-size: 65%;
+        }
         @include mobile {
-            width: 60%;
+            margin-top: 64px;
+            background-size: 90%;
         }
     }
 }
