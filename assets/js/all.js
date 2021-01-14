@@ -32,6 +32,18 @@
     });
     $('.main-pic').on('click', function () {
       $('.pic-modal').fadeIn();
+    }); //news hover to active
+
+    $('.news-list .pic').on('click', function () {
+      $(this).toggleClass('active');
+    }); //menu hover to active
+
+    $('.order-menu .nav').on('click', function () {
+      $(this).toggleClass('active');
+    }); //fan hover to active
+
+    $('.fan-content .photo').on('click', function () {
+      $(this).toggleClass('active');
     });
   });
 })();

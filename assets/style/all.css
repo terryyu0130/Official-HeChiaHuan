@@ -183,16 +183,11 @@ img {
 .banner {
   width: 100%;
   padding-top: 50%;
-  background-position: center top;
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative; }
-  @media (max-width: 1024px) {
-    .banner {
-      padding-top: 60%; } }
-  @media (max-width: 767px) {
-    .banner {
-      padding-top: 75%; } }
   .banner .title-group {
     width: 50%;
     position: absolute;
@@ -238,20 +233,23 @@ img {
         width: 60%; } }
 
 .banner-index {
+  background-position: center top;
   background-image: url("../images/Banner/index.png"); }
   @media (max-width: 1024px) {
     .banner-index {
-      background-size: 100%; } }
+      background-size: 100%;
+      padding-top: 60%; } }
   @media (max-width: 767px) {
     .banner-index {
-      background-position: center center; } }
+      background-position: center bottom;
+      background-attachment: unset;
+      padding-top: 83.5%; } }
   .banner-index .title {
     background-image: url("../images/Index/index-title-1.png"); }
   .banner-index .subtitle {
     background-image: url("../images/Index/index-title-2.png"); }
 
 .banner-news {
-  background-position: center center;
   background-image: url("../images/Banner/news.png"); }
   .banner-news .title {
     background-image: url("../images/Header/header_1.png"); }
@@ -262,25 +260,21 @@ img {
     background-image: url("../images/Header/header_2.png"); }
 
 .banner-menu {
-  background-position: center center;
   background-image: url("../images/Banner/menu.png"); }
   .banner-menu .title {
     background-image: url("../images/Header/header_3.png"); }
 
 .banner-QA {
-  background-position: center center;
   background-image: url("../images/Banner/QA.png"); }
   .banner-QA .title {
     background-image: url("../images/Header/header_4.png"); }
 
 .banner-contactUs {
-  background-position: center center;
   background-image: url("../images/Banner/contactUs.png"); }
   .banner-contactUs .title {
     background-image: url("../images/Header/header_5.png"); }
 
 .banner-fanPage {
-  background-position: center center;
   background-image: url("../images/Banner/fanPage.png"); }
   .banner-fanPage .title {
     background-image: url("../images/Header/header_6.png"); }
@@ -309,8 +303,9 @@ img {
     .banner-QA,
     .banner-contactUs,
     .banner-fanPage {
-      background-position: center center;
-      padding-top: 75%; } }
+      background-position: center bottom;
+      background-attachment: unset;
+      padding-top: 83.4%; } }
 
 .card {
   background-color: #EEE6DB;
@@ -869,7 +864,9 @@ img {
     @media (max-width: 767px) {
       .about-story .pic {
         width: 100%;
-        padding-top: 80%; } }
+        padding-top: 80%;
+        -webkit-box-shadow: 0 0 3px 3px #C6A866;
+                box-shadow: 0 0 3px 3px #C6A866; } }
   .about-story .pic-1 {
     background-image: url("../images/Story/story-pic-1.png"); }
   .about-story .pic-2 {
@@ -941,7 +938,9 @@ img {
     @media (max-width: 767px) {
       .contact-info .pic {
         width: 100%;
-        padding-top: 70%; } }
+        padding-top: 70%;
+        -webkit-box-shadow: 0 0 3px 3px #C6A866;
+                box-shadow: 0 0 3px 3px #C6A866; } }
   .contact-info .info {
     width: 49%; }
     @media (max-width: 767px) {
@@ -1033,10 +1032,14 @@ img {
     margin-top: 24px;
     position: relative;
     cursor: pointer; }
-    .fan-content .photo:hover .link {
+    .fan-content .photo:hover .link, .fan-content .photo.active .link {
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
               transform: scale(1); }
+    @media (max-width: 767px) {
+      .fan-content .photo {
+        width: 75%;
+        padding-top: 148%; } }
   .fan-content .facebook {
     background-image: url("../images/Fanpage/facebook.PNG"); }
   .fan-content .instagram {
@@ -1184,8 +1187,8 @@ img {
     @media (max-width: 767px) {
       .index-story .pic {
         padding-top: 80%;
-        -webkit-box-shadow: 0 0 5px 5px #C6A866;
-                box-shadow: 0 0 5px 5px #C6A866;
+        -webkit-box-shadow: 0 0 3px 3px #C6A866;
+                box-shadow: 0 0 3px 3px #C6A866;
         margin-top: 16px; } }
 
 .news-list {
@@ -1262,11 +1265,11 @@ img {
         width: 100%;
         padding-top: 100%;
         border-radius: 8px 8px 0 0; } }
-    .news-list .pic:hover .link {
+    .news-list .pic:hover .link, .news-list .pic.active .link {
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
               transform: scale(1); }
-    .news-list .pic:hover .link-icon {
+    .news-list .pic:hover .link-icon, .news-list .pic.active .link-icon {
       margin-top: 30%; }
   .news-list .pic-1 {
     background-image: url("../images/News/news_1.png"); }
@@ -1396,7 +1399,7 @@ img {
       @media (max-width: 767px) {
         .order-menu .pic-modal .menu-modal {
           width: 98%;
-          height: 36%; } }
+          height: 38%; } }
     .order-menu .pic-modal .close {
       font-size: 48px;
       color: #FF541C;
@@ -1409,13 +1412,13 @@ img {
       @media (max-width: 1024px) {
         .order-menu .pic-modal .close {
           font-size: 36px;
-          top: 18.5%;
-          right: 0; } }
+          top: 17.5%;
+          right: 2.5%; } }
       @media (max-width: 767px) {
         .order-menu .pic-modal .close {
           font-size: 24px;
-          top: 30.5%;
-          right: 0; } }
+          top: 29%;
+          right: 2%; } }
   .order-menu .title {
     width: 100%;
     padding-top: 10%;
@@ -1497,7 +1500,7 @@ img {
     background-repeat: no-repeat;
     position: relative;
     cursor: pointer; }
-    .order-menu .nav:hover .price-group {
+    .order-menu .nav:hover .price-group, .order-menu .nav.active .price-group {
       opacity: 1; }
     @media (max-width: 1024px) {
       .order-menu .nav {
@@ -1779,7 +1782,7 @@ img {
         padding-top: 12%; } }
     @media (max-width: 767px) {
       .QA-list .title {
-        padding-top: 15%; } }
+        padding-top: 16%; } }
   .QA-list .Q1 {
     background-image: url("../images/QA/Q1.png"); }
   .QA-list .Q2 {
