@@ -1,0 +1,34 @@
+.db {
+    display: block;
+}
+
+.db-mb {
+    @include mobile {
+        display: block;
+    }
+}
+
+.db-md {
+    @include pad {
+        display: block;
+    }
+    @include mobile {
+        display: inline-block;
+    }
+}
+
+.dn-md {
+    @include pad {
+        display: none;
+    }
+}
+
+.dn-mb {
+    @include mobile {
+        display: none;
+    }
+}
+
+.op-0 {
+    opacity: 0;
+}

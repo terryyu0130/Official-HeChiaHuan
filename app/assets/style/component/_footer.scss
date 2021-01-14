@@ -1,0 +1,91 @@
+// footer
+.footer-wrap {
+    background-color: $color-primary;
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        width: 100%;
+        background-color: $color-secondary;
+        position: absolute;
+        left: 0;
+    }
+    &::before {
+        height: 3px;
+        top: 0;
+    }
+    &::after {
+        height: 1px;
+        bottom: 72px;
+        @include pad {
+            bottom: 56px;
+        }
+        @include mobile {
+            bottom: 58px;
+        }
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .info-group {
+        padding: $middle 0;
+        @include pad {
+            padding: $middle-lg 0;
+        }
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        font: normal normal bold 24px/32px "Lato", "Noto Sans TC", sans-serif;
+        @include pad {
+            font: normal normal bold 21px/28px "Lato", "Noto Sans TC", sans-serif;
+        }
+        @include mobile {
+            font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+        }
+        & + .item {
+            margin-top: 32px;
+            @include pad {
+                margin-top: $middle-md;
+            }
+        }
+    }
+    .icon {
+        width: 36px;
+        font-size: 32px;
+        text-align: center;
+        margin-right: $small-md;
+        @include mobile {
+            font-size: 36px;
+            margin-right: $small;
+        }
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+        padding: $middle-md 0;
+        font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif;
+        position: relative;
+        @include pad {
+            padding: $small 0;
+        }
+        @include mobile {
+            font: normal normal normal 14px/21px "Lato", "Noto Sans TC", sans-serif;
+            padding: $small-md 0;
+        }
+    }
+    .text {
+        color: $color-block;
+    }
+    .address,
+    .number {
+        color: $color-block;
+        transition: 0.5s;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}

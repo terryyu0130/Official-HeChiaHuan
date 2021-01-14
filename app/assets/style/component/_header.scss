@@ -1,0 +1,172 @@
+// header
+.header-wrap {
+    background-color: rgba(19, 10, 4, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    @include mobile {
+        background-color: rgba(19, 10, 4, 0.8); 
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: $color-primary;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile {
+            justify-content: center;
+            position: relative;
+            padding: $small-md 0;
+        }
+        .logo {
+            width: 12%;
+            @include mobile {
+                width: 30%;
+            }
+        }
+        .menu-left,
+        .menu-right {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mobile {
+                flex-wrap: wrap;
+                width: 55%;
+                position: absolute;
+                top: 64px;
+                background-color: rgba(19, 10, 4, .8);
+            }
+        }
+        .menu-left {
+            @include mobile {
+                left: -60%;
+                transition: .5s;
+                &.active {
+                    left: -5%;
+                }
+            }
+        }
+        .menu-right {
+            @include mobile {
+                right: -60%;
+                transition: .5s;
+                &.active {
+                    right: -5%;
+                }
+            }
+        }
+        .item {
+            width: 33.33333%;
+            @include mobile {
+                width: 100%;
+                border: 1px solid $color-secondary;
+                margin: 0 -1px -1px 0;
+            }
+        }
+        .default {
+            display: block;
+            padding-top: 20%;
+            background-position: center center;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            padding: 40px 0;
+            position: relative;
+            @include pad {
+                background-size: 100%;
+                padding: $middle-lg 0;
+            }
+            @include mobile {
+                background-size: 60%;
+                padding: $middle-md 0;
+                &::after {
+                    display: none;
+                }
+            }
+            &::after {
+                content: "";
+                width: 60%;
+                height: 3px;
+                background-color: $color-secondary;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 15%;
+                opacity: 0;
+                transition: 0.5s;
+            }
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+        .header-1 {
+            background-image: url("../images/Header/header_1.png");
+        }
+        .header-2 {
+            background-image: url("../images/Header/header_2.png");
+        }
+        .header-3 {
+            background-image: url("../images/Header/header_3.png");
+        }
+        .header-4 {
+            background-image: url("../images/Header/header_4.png");
+        }
+        .header-5 {
+            background-image: url("../images/Header/header_5.png");
+        }
+        .header-6 {
+            background-image: url("../images/Header/header_6.png");
+        }
+    }
+    .btn {
+        display: none;
+        @include mobile {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: $color-primary;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto 0;
+            border-radius: $small;
+            box-shadow: 0 -10px 0 $color-primary,0 10px 0 $color-primary;
+            transition: .5s;
+            &::before,
+            &::after {
+                content: "";
+                width: 100%;
+                height: 4px;
+                background-color: $color-primary;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                border-radius: $small;
+                transition: .5s;
+                transform: rotate(0deg);
+            }
+            &.active {
+                background-color: transparent;
+                box-shadow: 0 0 0 transparent,0 0 0 transparent;
+                &::before {
+                    transform: rotate(45deg);
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

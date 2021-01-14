@@ -1,0 +1,169 @@
+// news list
+.news-list {
+    background-color: $color-bg;
+    .list {
+        width: 100%;
+        padding: $middle 0;
+        @include mobile {
+            padding: $middle-md 0;
+        }
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+        &+.item {
+            margin-top: $middle;
+            @include mobile {
+                margin-top: $middle-md;
+            }
+        }
+    }
+    .link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: $small-md 0 0 $small-md;
+        background-color: rgba(0,0,0,.2);
+        transition: .5s;
+        transform: scale(0);
+        @include mobile {
+            top: 17%;
+            bottom: 17%;
+            border-radius: 0;
+        }
+    }
+    .link-icon {
+        color: $color-primary;
+        font-size: 36px;
+        display: block;
+        text-align: center;
+        margin-top: -10%;
+        transition: .8s;
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+    .pic {
+        width: 45%;
+        padding-top: 29.8%;
+        background-position: center center;
+        background-size: cover;
+        border-radius: $small-md 0 0 $small-md;
+        position: relative;
+        @include pad {
+            width: 50%;
+            padding-top: 33.5%;
+        }
+        @include mobile {
+            width: 100%;
+            padding-top: 100%;
+            border-radius: $small-md $small-md 0 0;
+        }
+        &:hover {
+            .link {
+                transform: scale(1);
+            }
+            .link-icon {
+                margin-top: 30%;
+            }
+        }
+    }
+    .pic-1 {
+        background-image: url('../images/News/news_1.png');
+    }
+    .pic-2 {
+        background-image: url('../images/News/news_2.png');
+    }
+    .text-group {
+        width: 55%;
+        padding: $middle-md;
+        background-color: $color-white;
+        border-radius: 0 $small-md $small-md 0;
+        @include pad {
+            width: 50%;
+            padding: $middle-sm;
+        }
+        @include mobile {
+            width: 100%;
+            padding: 0 $small-md $middle;
+            border-radius: 0 0 $small-md $small-md;
+            margin-top: -10%;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .title {
+        font: normal normal bold 32px/44px "Lato", "Noto Sans TC", sans-serif;
+        @include pad {
+            font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+        }
+        @include mobile {
+            font: normal normal bold 20px/32px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
+    .info-1 {
+        color: $color-info-1;
+    }
+    .info-2 {
+        color: $color-info-2;
+    }
+    .info-group {
+        margin-top: $middle-md;
+        @include pad {
+            margin-top: 0;
+        }
+        @include mobile {
+            margin-bottom: $middle-md;
+        }
+    }
+    .info {
+        padding-top: $small-md;
+        font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+        @include pad {
+            font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+        }
+        @include mobile {
+            font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
+    .more {
+        color: $color-primary;
+        display: block;
+        position: absolute;
+        right: $middle-md;
+        bottom: $middle-md;
+        font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+        transition: .5s;
+        &:hover {
+            color: $color-secondary;
+        }
+        @include pad {
+            font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+            right: $small;
+            bottom: $small;
+        }
+        @include mobile {
+            width: 25%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: $small-lg;
+            padding: $small-sm;
+            text-align: center;
+            border: 1px solid $color-primary;
+            border-radius: $small-sm;
+            &:hover {
+                color: $color-white;
+                background-color: $color-primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+//fan content
+.fan-content {
+    padding: $middle 0;
+    background-color: $color-bg;
+    .group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 50%;
+        @include mobile {
+            width: 100%;
+            &+.item {
+                margin-top: $middle-md;
+            }
+        }
+    }
+    .title {
+        padding-top: 20%;
+        background-position: center center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        @include mobile {
+            background-size: 90%;
+        }
+    }
+    .FB {
+        background-image: url('../images/Fanpage/FB.png');
+    }
+    .IG {
+        background-image: url('../images/Fanpage/IG.png');
+    }
+    .photo {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 98%;
+        background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: $middle-md;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            .link {
+                transform: scale(1);
+            }
+        }
+    }
+    .facebook {
+        background-image: url('../images/Fanpage/facebook.PNG');
+    }
+    .instagram {
+        background-image: url('../images/Fanpage/instagram.PNG');
+    }
+    .link {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,.1);
+        transition: .5s;
+        transform: scale(0);
+    }
+    .icon {
+        width: 30%;
+    }
+    .text {
+        margin-top: $middle-md;
+        font: normal normal bold 24px/32px "Lato", "Noto Sans TC", sans-serif;
+        color: $color-primary;
+        @include pad {
+            font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
+}
