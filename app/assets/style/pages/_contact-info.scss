@@ -117,4 +117,9 @@
     .instagram {
         margin-left: $middle-md;
     }
+    .text-md {
+        @include pad {
+            font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
 }
