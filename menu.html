@@ -1,10 +1,45 @@
----
-title: 闔家歡南北餚餐館-菜單介紹
-layout: ./app/layout.ejs
-engine: ejs
-current: menu
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Font-awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </link>
+  <title>
+    闔家歡南北餚餐館-菜單介紹
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header-wrap">
+    <div class="container">
+      <div class="header">
+        <ul class="menu-left">
+          <li class="item"><a href="news.html" class="default header-1"></a></li>
+          <li class="item"><a href="aboutUs.html" class="default header-2"></a></li>
+          <li class="item"><a href="menu.html" class="default header-3"></a></li>
+        </ul>
+        <h1 class="logo"><a href="index.html">Logo</a></h1>
+        <ul class="menu-right">
+          <li class="item"><a href="question.html" class="default header-4"></a></li>
+          <li class="item"><a href="contactUs.html" class="default header-5"></a></li>
+          <li class="item"><a href="fanPage.html" class="default header-6"></a></li>
+        </ul>
+        <div class="btn"></div>
+      </div>
+    </div>
+  </div>
+
+  
 <!-- banner -->
 <div class="banner banner-menu">
     <div class="title-group">
@@ -580,3 +615,37 @@ current: menu
         </p>
     </div>
 </div>
+
+    <!-- footer -->
+    <div class="footer-wrap">
+      <div class="container">
+        <div class="footer">
+          <ul class="info-group">
+            <li class="item">
+              <i class="fas fa-clock icon"></i>
+              <p class="text">營業時間：<span class="db-mb">AM 11:00 - PM 14:00；<span class="db-mb">PM 17:00 - PM
+                    20:30</span></span></p>
+            </li>
+            <li class="item">
+              <i class="fas fa-map-marker-alt icon"></i>
+              <p class="text">營業地址：<span class="db-mb"><a
+                    href="https://www.google.com/maps/place/%E9%97%94%E5%AE%B6%E6%AD%A1%E9%A4%90%E5%BB%B3/@23.9745019,121.5962503,17z/data=!3m1!4b1!4m5!3m4!1s0x34689f96933e4eaf:0x63df55be30874ac!8m2!3d23.974497!4d121.598439"
+                    target="_blank" class="address">970花蓮縣花蓮市中和街228號</a></span></p>
+            </li>
+            <li class="item">
+              <i class="fas fa-phone-alt icon"></i>
+              <p class="text">聯繫電話：<span class="db-mb"><a href="tel:+886-3-8334450" class="number">03-8334450</a></span>
+              </p>
+            </li>
+          </ul>
+          <div class="copyright">&copy; 2021 花蓮-闔家歡南北餚餐館. <span class="db-mb">All Rights Reserved. Design by Terry
+              Yu</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
