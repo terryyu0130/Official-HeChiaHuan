@@ -40,10 +40,15 @@
         margin-top: $middle-md;
         position: relative;
         cursor: pointer;
-        &:hover {
+        &:hover,
+        &.active {
             .link {
                 transform: scale(1);
             }
+        }
+        @include mobile {
+            width: 75%;
+            padding-top: 148%;
         }
     }
     .facebook {

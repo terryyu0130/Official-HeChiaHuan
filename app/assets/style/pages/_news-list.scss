@@ -67,7 +67,8 @@
             padding-top: 100%;
             border-radius: $small-md $small-md 0 0;
         }
-        &:hover {
+        &:hover,
+        &.active {
             .link {
                 transform: scale(1);
             }

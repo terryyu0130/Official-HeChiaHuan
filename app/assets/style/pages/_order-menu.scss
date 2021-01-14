@@ -45,7 +45,7 @@
             }
             @include mobile {
                 width: 98%;
-                height: 36%;
+                height: 38%;
             }
         }
         .close {
@@ -59,13 +59,13 @@
             cursor: pointer;
             @include pad {
                 font-size: 36px;
-                top: 18.5%;
-                right: 0;
+                top: 17.5%;
+                right: 2.5%;
             }
             @include mobile {
                 font-size: 24px;
-                top: 30.5%;
-                right: 0;
+                top: 29%;
+                right: 2%;
             }
         }
     }
@@ -138,7 +138,8 @@
         background-repeat: no-repeat;
         position: relative;
         cursor: pointer;
-        &:hover {
+        &:hover,
+        &.active {
             .price-group {
                 opacity: 1;
             }

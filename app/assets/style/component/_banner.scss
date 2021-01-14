@@ -2,16 +2,11 @@
 .banner {
     width: 100%;
     padding-top: 50%;
-    background-position: center top;
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    @include pad {
-        padding-top: 60%;
-    }
-    @include mobile {
-        padding-top: 75%;
-    }
     .title-group {
         width: 50%;
         position: absolute;
@@ -55,12 +50,16 @@
 
 // banner-index
 .banner-index {
+    background-position: center top;
     background-image: url("../images/Banner/index.png");
     @include pad {
         background-size: 100%;
+        padding-top: 60%;
     }
     @include mobile {
-        background-position: center center;
+        background-position: center bottom;
+        background-attachment: unset;
+        padding-top: 83.5%;
     }
     .title {
         background-image: url("../images/Index/index-title-1.png");
@@ -72,7 +71,6 @@
 
 // banner-news
 .banner-news {
-    background-position: center center;
     background-image: url("../images/Banner/news.png");
     .title {
         background-image: url("../images/Header/header_1.png");
@@ -89,7 +87,6 @@
 
 // banner-menu
 .banner-menu {
-    background-position: center center;
     background-image: url("../images/Banner/menu.png");
     .title {
         background-image: url("../images/Header/header_3.png");
@@ -98,7 +95,6 @@
 
 // banner-QA
 .banner-QA {
-    background-position: center center;
     background-image: url("../images/Banner/QA.png");
     .title {
         background-image: url("../images/Header/header_4.png");
@@ -107,7 +103,6 @@
 
 // banner-contactUs
 .banner-contactUs {
-    background-position: center center;
     background-image: url("../images/Banner/contactUs.png");
     .title {
         background-image: url("../images/Header/header_5.png");
@@ -116,7 +111,6 @@
 
 // banner-fanPage
 .banner-fanPage {
-    background-position: center center;
     background-image: url("../images/Banner/fanPage.png");
     .title {
         background-image: url("../images/Header/header_6.png");
@@ -137,7 +131,8 @@
         padding-top: 50%;
     }
     @include mobile {
-        background-position: center center;
-        padding-top: 75%;
+        background-position: center bottom;
+        background-attachment: unset;
+        padding-top: 83.4%;
     }
 }
