@@ -1641,6 +1641,8 @@ img {
         margin-top: 8px; } }
   .order-menu .special {
     color: #FF541C; }
+  .order-menu .number {
+    color: #035095; }
   .order-menu .pastry-header {
     background-image: url("../images/Menu/Pastry/pastry-header.png"); }
   .order-menu .pastry-1 {
@@ -1906,5 +1908,7 @@ img {
           -webkit-transform: rotate(180deg);
               -ms-transform: rotate(180deg);
                   transform: rotate(180deg); } }
+  .QA-list .number {
+    color: #035095; }
 
 /*# sourceMappingURL=all.css.map */
