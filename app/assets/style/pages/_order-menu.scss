@@ -137,13 +137,6 @@
         background-size: 100%;
         background-repeat: no-repeat;
         position: relative;
-        cursor: pointer;
-        &:hover,
-        &.active {
-            .price-group {
-                opacity: 1;
-            }
-        }
         @include pad {
             padding-top: 34%;
             width: 32.7%;
@@ -179,8 +172,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        opacity: 0;;
-        transition: 0.8s;
         @include pad {
             height: 90%;
         }
@@ -260,10 +251,10 @@
         background-image: url("../images/Menu/Pastry/6_豬肉捲大餅.png");
     }
     .pastry-7 {
-        background-image: url("../images/Menu/Pastry/7_香酥手抓餅.png");
+        background-image: url("../images/Menu/Pastry/7_抓餅.png");
     }
     .pastry-8 {
-        background-image: url("../images/Menu/Pastry/8_錢錢蔥油餅.png");
+        background-image: url("../images/Menu/Pastry/8_蔥油餅.png");
     }
     .pastry-9 {
         background-image: url("../images/Menu/Pastry/9_南瓜芋泥糕.png");
@@ -278,7 +269,7 @@
         background-image: url("../images/Menu/Pastry/12_酥炸螺絲卷.png");
     }
     .pastry-13 {
-        background-image: url("../images/Menu/Pastry/13_平安鹹光餅.png");
+        background-image: url("../images/Menu/Pastry/13_鹹光餅.png");
     }
     .pastry-14 {
         background-image: url("../images/Menu/Pastry/102_特製臘味蘿蔔糕.png");
@@ -312,7 +303,7 @@
         background-image: url("../images/Menu/Meat/20_白斬正土雞.png");
     }
     .meat-3 {
-        background-image: url("../images/Menu/Meat/21_陳年紹興醉雞.png");
+        background-image: url("../images/Menu/Meat/21_紹興醉雞.png");
     }
     .meat-4 {
         background-image: url("../images/Menu/Meat/22_客家鹽焗雞.png");
@@ -353,13 +344,13 @@
         background-image: url("../images/Menu/Seafood/41_鹽酥白秋蝦.png");
     }
     .seafood-4 {
-        background-image: url("../images/Menu/Seafood/45_酥脆鮮蝦鬆.png");
+        background-image: url("../images/Menu/Seafood/45_生菜蝦鬆.png");
     }
     .seafood-5 {
-        background-image: url("../images/Menu/Seafood/47_百合鮮蝦仁.png");
+        background-image: url("../images/Menu/Seafood/47_百合炒蝦仁.png");
     }
     .seafood-6 {
-        background-image: url("../images/Menu/Seafood/48_翠豆苗蝦仁.png");
+        background-image: url("../images/Menu/Seafood/48_豆苗炒蝦仁.png");
     }
     .seafood-7 {
         background-image: url("../images/Menu/Seafood/49_香清炒蝦仁.png");
@@ -397,10 +388,10 @@
         background-image: url("../images/Menu/Fried/30_蒜苗炒臘肉.png");
     }
     .fired-4 {
-        background-image: url("../images/Menu/Fried/31_乾扁炒肥腸.png");
+        background-image: url("../images/Menu/Fried/31_乾扁肥腸.png");
     }
     .fired-5 {
-        background-image: url("../images/Menu/Fried/32_香酥炸肥腸.png");
+        background-image: url("../images/Menu/Fried/32_酥炸肥腸.png");
     }
     .fired-6 {
         background-image: url("../images/Menu/Fried/34_芥蘭炒牛肉.png");
@@ -409,22 +400,22 @@
         background-image: url("../images/Menu/Fried/35_蔥爆牛肉片.png");
     }
     .fired-8 {
-        background-image: url("../images/Menu/Fried/36_香五更腸旺.png");
+        background-image: url("../images/Menu/Fried/36_五更腸旺.png");
     }
     .fired-9 {
         background-image: url("../images/Menu/Fried/37_酸白菜炒牛肉.png");
     }
     .fired-10 {
-        background-image: url("../images/Menu/Fried/38_宮保辣雞丁.png");
+        background-image: url("../images/Menu/Fried/38_宮保雞丁.png");
     }
     .fired-11 {
-        background-image: url("../images/Menu/Fried/39_糖醋甜雞丁.png");
+        background-image: url("../images/Menu/Fried/39_糖醋雞丁.png");
     }
     .fired-12 {
-        background-image: url("../images/Menu/Fried/42_蜜柳橙排骨.png");
+        background-image: url("../images/Menu/Fried/42_柳橙排骨.png");
     }
     .fired-13 {
-        background-image: url("../images/Menu/Fried/43_酥京都排骨.png");
+        background-image: url("../images/Menu/Fried/43_京都排骨.png");
     }
     .fired-14 {
         background-image: url("../images/Menu/Fried/53_松菇鐵板牛柳.png");
@@ -436,7 +427,7 @@
         background-image: url("../images/Menu/Fried/55_清香炒三鮮.png");
     }
     .fired-17 {
-        background-image: url("../images/Menu/Fried/56_蒜泥五花肉.png");
+        background-image: url("../images/Menu/Fried/56_蒜泥白肉.png");
     }
     .fired-18 {
         background-image: url("../images/Menu/Fried/58_蘆筍炒花枝.png");
@@ -445,10 +436,10 @@
         background-image: url("../images/Menu/Fried/59_芹菜炒花枝.png");
     }
     .fired-20 {
-        background-image: url("../images/Menu/Fried/60_嗆三杯中卷.png");
+        background-image: url("../images/Menu/Fried/60_三杯中卷.png");
     }
     .fired-21 {
-        background-image: url("../images/Menu/Fried/65_客家香小炒.png");
+        background-image: url("../images/Menu/Fried/65_苗栗小炒.png");
     }
 
     // soup
@@ -456,13 +447,13 @@
         background-image: url("../images/Menu/Soup/soup-header.png");
     }
     .soup-1 {
-        background-image: url("../images/Menu/Soup/103_吉慶砂鍋魚頭.png");
+        background-image: url("../images/Menu/Soup/103_砂鍋魚頭火鍋.png");
     }
     .soup-2 {
         background-image: url("../images/Menu/Soup/104_砂鍋芋頭鴨煲湯.png");
     }
     .soup-3 {
-        background-image: url("../images/Menu/Soup/95_蟲草養生烏骨雞湯.png");
+        background-image: url("../images/Menu/Soup/95_蟲草姬松茸烏骨雞煲湯.png");
     }
     .soup-4 {
         background-image: url("../images/Menu/Soup/97_金華火腿芽白燉雞.png");

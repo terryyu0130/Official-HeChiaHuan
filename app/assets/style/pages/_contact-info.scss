@@ -50,7 +50,7 @@
         background-position: center center;
         background-size: cover;
         border-radius: $small-md;
-        box-shadow: 0 0 10px 10px $color-secondary;
+        box-shadow: 0 0 10px 5px $color-secondary;
         @include pad {
             padding-top: 45%;
         }
