@@ -241,7 +241,7 @@ img {
         margin-top: 64px; } }
   .banner .subtitle {
     background-size: 50%;
-    padding-top: 4%; }
+    padding-top: 5%; }
   .banner .style {
     width: 50%;
     background-size: 45%;
@@ -792,7 +792,8 @@ img {
         width: 30%; } }
     @media (max-width: 767px) {
       .about-story .since {
-        width: 60%; } }
+        width: 40%;
+        padding-top: 8%; } }
   .about-story .text-group {
     width: 70%;
     margin: 0 auto;
