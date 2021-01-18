@@ -240,21 +240,21 @@ img {
       .banner .title {
         margin-top: 64px; } }
   .banner .subtitle {
-    background-size: 80%;
-    padding-top: 5%; }
+    background-size: 50%;
+    padding-top: 4%; }
   .banner .style {
     width: 50%;
-    background-size: 50%;
+    background-size: 45%;
     border-radius: 8px;
     margin-top: 80px; }
     @media (max-width: 1024px) {
       .banner .style {
         margin-top: 56px;
-        background-size: 65%; } }
+        background-size: 60%; } }
     @media (max-width: 767px) {
       .banner .style {
         margin-top: 64px;
-        background-size: 90%; } }
+        background-size: 80%; } }
 
 .banner-index {
   background-position: center top;
@@ -346,17 +346,17 @@ img {
     text-align: center;
     background-image: url("../images/Popular/popular-title.png");
     background-position: center center;
-    background-size: 40%;
+    background-size: 35%;
     background-repeat: no-repeat;
     margin-bottom: 24px; }
     @media (max-width: 1024px) {
       .card .title {
         padding-top: 10%;
-        background-size: 60%; } }
+        background-size: 55%; } }
     @media (max-width: 767px) {
       .card .title {
         padding-top: 10%;
-        background-size: 80%; } }
+        background-size: 75%; } }
   .card .list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -594,7 +594,7 @@ img {
           width: 55%;
           position: absolute;
           top: 64px;
-          background-color: #eeeeee; } }
+          background-color: rgba(255, 255, 255, 0.8); } }
     @media (max-width: 767px) {
       .header-wrap .header .menu-left {
         left: -60%;
@@ -764,7 +764,6 @@ img {
   .about-story .title,
   .about-story .since {
     margin: 0 auto;
-    padding-top: 8%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%; }
@@ -773,22 +772,24 @@ img {
       .about-story .since {
         padding-top: 10%; } }
   .about-story .title {
-    width: 70%;
+    padding-top: 8%;
+    width: 60%;
     background-image: url("../images/Story/story-title.png");
     position: relative;
     padding-bottom: 24px; }
     @media (max-width: 1024px) {
       .about-story .title {
-        width: 80%; } }
+        width: 75%; } }
     @media (max-width: 767px) {
       .about-story .title {
         width: 100%; } }
   .about-story .since {
-    width: 35%;
+    padding-top: 6%;
+    width: 25%;
     background-image: url("../images/Story/since.png"); }
     @media (max-width: 1024px) {
       .about-story .since {
-        width: 40%; } }
+        width: 30%; } }
     @media (max-width: 767px) {
       .about-story .since {
         width: 60%; } }
@@ -922,6 +923,9 @@ img {
 .contact-info {
   background-color: #EEE6DB;
   padding: 36px 0; }
+  @media (max-width: 767px) {
+    .contact-info {
+      padding: 24px 0; } }
   .contact-info .photo {
     width: 100%;
     background-position: center center;
@@ -929,26 +933,22 @@ img {
   .contact-info .title {
     padding-top: 8%;
     background-image: url("../images/Index/index-title-1.png");
-    background-size: 50%; }
+    background-size: 60%; }
     @media (max-width: 1024px) {
       .contact-info .title {
         padding-top: 10%;
-        background-size: 60%; } }
+        background-size: 75%; } }
     @media (max-width: 767px) {
       .contact-info .title {
         padding-top: 16%;
         background-size: 100%; } }
   .contact-info .subtitle {
-    padding-top: 5%;
+    padding-top: 6%;
     background-image: url("../images/Index/index-title-2.png");
-    background-size: 40%; }
-    @media (max-width: 1024px) {
-      .contact-info .subtitle {
-        background-size: 50%; } }
+    background-size: 30%; }
     @media (max-width: 767px) {
       .contact-info .subtitle {
-        padding-top: 8%;
-        background-size: 90%; } }
+        background-size: 45%; } }
   .contact-info .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -959,10 +959,10 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 48px; }
+    padding-top: 36px; }
     @media (max-width: 1024px) {
       .contact-info .content {
-        padding-top: 36px; } }
+        padding-top: 24px; } }
     @media (max-width: 767px) {
       .contact-info .content {
         -ms-flex-wrap: wrap;
@@ -1065,7 +1065,7 @@ img {
     background-repeat: no-repeat; }
     @media (max-width: 767px) {
       .fan-content .title {
-        background-size: 90%; } }
+        background-size: 85%; } }
   .fan-content .FB {
     background-image: url("../images/Fanpage/FB.png"); }
   .fan-content .IG {
@@ -1166,12 +1166,12 @@ img {
   .index-story .title,
   .index-story .since {
     margin: 0 auto;
-    padding-top: 10%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%; }
   .index-story .title {
-    width: 80%;
+    padding-top: 10%;
+    width: 90%;
     background-image: url("../images/Story/story-title.png");
     position: relative;
     padding-bottom: 24px; }
@@ -1179,11 +1179,12 @@ img {
       .index-story .title {
         width: 100%; } }
   .index-story .since {
+    padding-top: 8%;
     width: 40%;
     background-image: url("../images/Story/since.png"); }
     @media (max-width: 1024px) {
       .index-story .since {
-        width: 60%; } }
+        width: 45%; } }
   .index-story .text-group {
     padding: 16px; }
     @media (max-width: 767px) {
@@ -1481,8 +1482,8 @@ img {
         padding-top: 15%; } }
     @media (max-width: 767px) {
       .order-menu .title {
-        background-size: 65%;
-        padding-top: 20%; } }
+        background-size: 60%;
+        padding-top: 18%; } }
     .order-menu .title .menu-arrow {
       display: none; }
       @media (max-width: 767px) {
