@@ -1,6 +1,9 @@
 .contact-info {
     background-color: $color-bg;
     padding: $middle 0;
+    @include mobile {
+        padding: $middle-md 0;
+    }
     .photo {
         width: 100%;
         background-position: center center;
@@ -9,10 +12,10 @@
     .title {
         padding-top: 8%;
         background-image: url('../images/Index/index-title-1.png');
-        background-size: 50%;
+        background-size: 60%;
         @include pad {
             padding-top: 10%;
-            background-size: 60%;
+            background-size: 75%;
         }
         @include mobile {
             padding-top: 16%;
@@ -20,24 +23,20 @@
         }
     }
     .subtitle {
-        padding-top: 5%;
+        padding-top: 6%;
         background-image: url('../images/Index/index-title-2.png');
-        background-size: 40%;
-        @include pad {
-            background-size: 50%;
-        }
+        background-size: 30%;
         @include mobile {
-            padding-top: 8%;
-            background-size: 90%;
+            background-size: 45%;
         }
     }
     .content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: $large;
+        padding-top: $middle;
         @include pad {
-            padding-top: $middle;
+            padding-top: $middle-md;
         }
         @include mobile {
             flex-wrap: wrap;

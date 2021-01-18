@@ -19,7 +19,6 @@
     .title,
     .since {
         margin: 0 auto;
-        padding-top: 8%;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -28,22 +27,24 @@
         }
     }
     .title {
-        width: 70%;
+        padding-top: 8%;
+        width: 60%;
         background-image: url("../images/Story/story-title.png");
         position: relative;
         padding-bottom: $middle-md;
         @include pad {
-            width: 80%;
+            width: 75%;
         }
         @include mobile {
             width: 100%;
         }
     }
     .since {
-        width: 35%;
+        padding-top: 6%;
+        width: 25%;
         background-image: url("../images/Story/since.png");
         @include pad {
-            width: 40%;
+            width: 30%;
         }
         @include mobile {
             width: 60%;

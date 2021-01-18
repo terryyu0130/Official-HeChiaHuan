@@ -14,16 +14,16 @@
         text-align: center;
         background-image: url("../images/Popular/popular-title.png");
         background-position: center center;
-        background-size: 40%;
+        background-size: 35%;
         background-repeat: no-repeat;
         margin-bottom: $middle-md;
         @include pad {
             padding-top: 10%;
-            background-size: 60%;
+            background-size: 55%;
         }
         @include mobile {
             padding-top: 10%;
-            background-size: 80%;
+            background-size: 75%;
         }
     }
     .list {
