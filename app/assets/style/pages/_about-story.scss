@@ -47,7 +47,8 @@
             width: 30%;
         }
         @include mobile {
-            width: 60%;
+            width: 40%;
+            padding-top: 8%;
         }
     }
     .text-group {
