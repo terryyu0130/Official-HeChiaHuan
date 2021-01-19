@@ -23,11 +23,12 @@
         }
     }
     .subtitle {
-        padding-top: 6%;
+        padding-top: 5%;
         background-image: url('../images/Index/index-title-2.png');
-        background-size: 30%;
+        background-size: 35%;
         @include mobile {
-            background-size: 45%;
+            background-size: 60%;
+            padding-top: 6%;
         }
     }
     .content {

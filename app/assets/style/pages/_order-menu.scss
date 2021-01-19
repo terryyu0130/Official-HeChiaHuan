@@ -78,8 +78,8 @@
         border-top: 3px solid $color-secondary;
         position: relative;
         @include pad {
-            background-size: 45%;
-            padding-top: 15%;
+            background-size: 40%;
+            padding-top: 12%;
         }
         @include mobile {
             background-size: 60%;

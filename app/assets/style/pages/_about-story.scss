@@ -41,13 +41,13 @@
     }
     .since {
         padding-top: 6%;
-        width: 25%;
+        width: 30%;
         background-image: url("../images/Story/since.png");
         @include pad {
-            width: 30%;
+            width: 40%;
         }
         @include mobile {
-            width: 40%;
+            width: 50%;
             padding-top: 8%;
         }
     }

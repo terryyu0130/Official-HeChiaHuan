@@ -51,12 +51,12 @@
     }
     .title {
         padding-top: 10%;
-        width: 90%;
+        width: 100%;
         background-image: url("../images/Story/story-title.png");
         position: relative;
         padding-bottom: $middle-md;
         @include pad {
-            width: 100%;
+            padding-top: 8%;
         }
         // &::after,
         // &::before {
@@ -81,11 +81,8 @@
     }
     .since {
         padding-top: 8%;
-        width: 40%;
+        width: 50%;
         background-image: url("../images/Story/since.png");
-        @include pad {
-            width: 45%;
-        }
     }
     .text-group {
         padding: $small;

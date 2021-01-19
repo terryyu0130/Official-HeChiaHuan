@@ -17,12 +17,15 @@
         }
     }
     .title {
-        padding-top: 20%;
+        padding-top: 15%;
         background-position: center center;
-        background-size: 70%;
+        background-size: 60%;
         background-repeat: no-repeat;
+        @include pad {
+            padding-top: 10%;
+        }
         @include mobile {
-            background-size: 85%;
+            padding-top: 12%;
         }
     }
     .FB {
@@ -30,6 +33,9 @@
     }
     .IG {
         background-image: url('../images/Fanpage/IG.png');
+        @include mobile {
+            margin-top: $middle-md;
+        }
     }
     .photo {
         width: 50%;
