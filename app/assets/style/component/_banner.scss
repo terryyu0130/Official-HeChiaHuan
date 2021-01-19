@@ -32,8 +32,8 @@
             padding-top: 12%;
         }
         @include mobile {
-            width: 85%;
-            padding-top: 15%;
+            width: 90%;
+            padding-top: 12%;
         }
     }
     .title {
@@ -50,6 +50,10 @@
     .subtitle {
         background-size: 60%;
         padding-top: 4%;
+        @include mobile {
+            background-size: 65%;
+            padding-top: 8%;
+        }
     }
     .style {
         width: 50%;
