@@ -215,7 +215,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.3); }
   .banner .bg-img {
     width: 50%;
     padding-top: 8%;
@@ -262,7 +262,7 @@ img {
 
 .banner-index {
   background-position: center top;
-  background-image: url("../images/Banner/index.png"); }
+  background-image: url("../images/Banner/index-.jpg"); }
   @media (max-width: 1024px) {
     .banner-index {
       background-size: 100%;
@@ -278,32 +278,32 @@ img {
     background-image: url("../images/Index/index-title-2.png"); }
 
 .banner-news {
-  background-image: url("../images/Banner/news.png"); }
+  background-image: url("../images/Banner/news-.jpg"); }
   .banner-news .title {
     background-image: url("../images/Header/header_1.png"); }
 
 .banner-aboutUs {
-  background-image: url("../images/Banner/aboutUs.png"); }
+  background-image: url("../images/Banner/aboutUs-.jpg"); }
   .banner-aboutUs .title {
     background-image: url("../images/Header/header_2.png"); }
 
 .banner-menu {
-  background-image: url("../images/Banner/menu.png"); }
+  background-image: url("../images/Banner/menu-.jpg"); }
   .banner-menu .title {
     background-image: url("../images/Header/header_3.png"); }
 
 .banner-QA {
-  background-image: url("../images/Banner/QA.png"); }
+  background-image: url("../images/Banner/QA-.jpg"); }
   .banner-QA .title {
     background-image: url("../images/Header/header_4.png"); }
 
 .banner-contactUs {
-  background-image: url("../images/Banner/contactUs.png"); }
+  background-image: url("../images/Banner/contactUs-.jpg"); }
   .banner-contactUs .title {
     background-image: url("../images/Header/header_5.png"); }
 
 .banner-fanPage {
-  background-image: url("../images/Banner/fanPage.png"); }
+  background-image: url("../images/Banner/fanPage-.jpg"); }
   .banner-fanPage .title {
     background-image: url("../images/Header/header_6.png"); }
 
