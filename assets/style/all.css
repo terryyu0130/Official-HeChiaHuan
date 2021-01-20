@@ -1272,7 +1272,7 @@ img {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
     .news-list .item + .item {
-      margin-top: 36px; }
+      margin-top: 48px; }
       @media (max-width: 767px) {
         .news-list .item + .item {
           margin-top: 24px; } }
@@ -1424,7 +1424,7 @@ img {
     @media (max-width: 767px) {
       .news-list .planTitle {
         width: 70%;
-        padding-top: 12%; } }
+        padding-top: 13%; } }
   .news-list .img-1 {
     background-image: url("../images/News/info.png"); }
     @media (max-width: 1024px) {
@@ -1438,80 +1438,88 @@ img {
         margin: 16px auto; } }
   .news-list .openData {
     width: 95%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .news-list .openData .project {
-      padding: 16px 8px;
-      border: 1px solid #FF541C;
+      width: 32%;
       border-radius: 8px;
-      background-color: #ffffff; }
-      .news-list .openData .project:nth-child(n+2) {
-        margin-top: 24px; }
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 0 8px 4px #bbb;
+              box-shadow: 0 0 8px 4px #bbb;
+      position: relative; }
       @media (max-width: 767px) {
         .news-list .openData .project {
-          padding: 16px; } }
-    .news-list .openData .planName,
-    .news-list .openData .description,
-    .news-list .openData .website {
-      font: normal normal normal 24px/36px "Lato", "Noto Sans TC", sans-serif; }
-      @media (max-width: 1024px) {
-        .news-list .openData .planName,
-        .news-list .openData .description,
-        .news-list .openData .website {
-          font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif; } }
-      @media (max-width: 767px) {
-        .news-list .openData .planName,
-        .news-list .openData .description,
-        .news-list .openData .website {
-          font: normal normal normal 14px/21px "Lato", "Noto Sans TC", sans-serif; } }
-    .news-list .openData .planName {
-      color: #FF541C;
-      font-weight: bold; }
-    .news-list .openData .description {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 16px; }
-      @media (max-width: 1024px) {
-        .news-list .openData .description {
-          margin-top: 8px; } }
-      @media (max-width: 767px) {
-        .news-list .openData .description {
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
-      .news-list .openData .description .text {
-        width: 11.7%; }
-        @media (max-width: 1024px) {
-          .news-list .openData .description .text {
-            width: 12.7%; } }
-        @media (max-width: 767px) {
-          .news-list .openData .description .text {
-            width: 100%; } }
-      .news-list .openData .description .test {
-        width: 87.3%; }
-        @media (max-width: 767px) {
-          .news-list .openData .description .test {
-            width: 100%; } }
-    .news-list .openData .website {
-      margin-top: 16px; }
-      @media (max-width: 1024px) {
-        .news-list .openData .website {
-          margin-top: 8px; } }
+          width: 100%;
+          -webkit-box-shadow: 0 0 3px 3px #bbb;
+                  box-shadow: 0 0 3px 3px #bbb; }
+          .news-list .openData .project + .project {
+            margin-top: 24px; } }
     .news-list .openData .text {
-      color: #121212;
-      font-weight: bold; }
-      @media (max-width: 767px) {
+      padding: 16px; }
+      @media (max-width: 1024px) {
         .news-list .openData .text {
-          display: block; } }
+          padding: 8px; } }
+    .news-list .openData .random {
+      border-radius: 8px 8px 0 0; }
+    .news-list .openData .planName {
+      font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+      color: #FF541C;
+      text-align: center; }
+      @media (max-width: 1024px) {
+        .news-list .openData .planName {
+          font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif; } }
+      @media (max-width: 767px) {
+        .news-list .openData .planName {
+          font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif; } }
+    .news-list .openData .description {
+      font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif;
+      padding: 16px 0 36px; }
+      @media (max-width: 1024px) {
+        .news-list .openData .description {
+          font: normal normal normal 12px/14px "Lato", "Noto Sans TC", sans-serif;
+          padding: 8px 0 36px; } }
+      @media (max-width: 767px) {
+        .news-list .openData .description {
+          font: normal normal normal 14px/21px "Lato", "Noto Sans TC", sans-serif; } }
+    .news-list .openData .website {
+      width: 30%;
+      text-align: center;
+      font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+      border: 1px solid #FF541C;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+      @media (max-width: 1024px) {
+        .news-list .openData .website {
+          width: 40%;
+          font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif;
+          bottom: 4px; } }
+      @media (max-width: 767px) {
+        .news-list .openData .website {
+          width: 25%;
+          bottom: 8px;
+          font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif; } }
     .news-list .openData .link-color {
-      color: #CCA838;
+      display: block;
+      padding: 4px;
+      color: #FF541C;
+      border-radius: 4px;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s; }
       .news-list .openData .link-color:hover {
-        color: #FF541C; }
-    @media (max-width: 767px) {
-      .news-list .openData .size {
-        font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif; } }
+        background-color: #FF541C;
+        color: #121212; }
 
 .order-menu {
   padding: 36px 0;

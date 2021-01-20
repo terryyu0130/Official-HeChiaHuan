@@ -52,22 +52,26 @@
     var url = 'http://opendataap2.hl.gov.tw/resource/files/2020-12-25/c52ca4ca56bbad92e58a0774ea118be6.json';
     axios.get("".concat(cors).concat(url)).then(function (response) {
       data = response.data; // console.log(data);
-      // document.body.innerHTML = JSON.stringify(message)
 
       getPlan();
     });
 
     function getPlan() {
-      var str = ''; // message = Array.from(message);
-
+      var str = '';
+      var count = 0;
       data.forEach(function (openData) {
         // console.log(openData.Name);
+        var planContent;
+
         if (openData.Name !== null) {
-          var planContent = "<li class='project'>\n                    <div class='planName'><span class='text'>\u6D3B\u52D5\u540D\u7A31\uFF1A</span><span class='size'>".concat(openData.Name, "</span></div>\n                    <div class='description'><span class='text'>\u6D3B\u52D5\u5167\u5BB9\uFF1A</span><span class='test'>").concat(openData.Description, "</span></div>\n                    <div class='website'><span class='text'>\u53C3\u8003\u8CC7\u6599\uFF1A</span><a href='").concat(openData.Website, "' target='_blank' class='link-color'>").concat(openData.Name, "-\u6D3B\u52D5\u4ECB\u7D39</a></div>\n                    </li>");
+          planContent = "<li class='project'>\n                    <img class='random' src=\"https://picsum.photos/id/".concat(13 + count, "/400/300\" alt=\"\">\n                    <div class='text'>\n                    <div class='planName'>").concat(openData.Name, "</div>\n                    <div class='description'>").concat(openData.Description, "</div>\n                    <div class='website'><a href='").concat(openData.Website, "' target='_blank' class='link-color'>\u67E5\u770B\u66F4\u591A</a></div>\n                    </div>\n                    </li>");
           str += planContent;
+          count += 1;
         } else {
           return;
         }
+
+        console.log(count);
       });
       openData.innerHTML = str;
     }
