@@ -1,8 +1,8 @@
 (function () {
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         // header btn
-        $('.header .btn').on('click',function(){
+        $('.header .btn').on('click', function () {
             $(this).toggleClass('active');
             $('.menu-left').toggleClass('active');
             $('.menu-right').toggleClass('active');
@@ -13,7 +13,7 @@
         // });
 
         // QA-list arrow
-        $('.QA-list .arrow').on('click',function(){
+        $('.QA-list .arrow').on('click', function () {
             $(this).toggleClass('active');
             $(this).parent().siblings().slideToggle();
             $(this).parent().parent().siblings().find('.text').slideUp();
@@ -22,7 +22,7 @@
         });
 
         //Meun arrow
-        $('.menu-arrow').on('click',function(){
+        $('.menu-arrow').on('click', function () {
             $(this).toggleClass('active');
             $(this).parent().siblings('.nav-wrap').slideToggle(800);
             $(this).parent().parent().siblings().find('.menu-arrow').removeClass('active');
@@ -30,15 +30,15 @@
         });
 
         //pic-modal
-        $('.order-menu .close').on('click',function(){
+        $('.order-menu .close').on('click', function () {
             $('.pic-modal').fadeOut();
         });
-        $('.main-pic').on('click',function(){
+        $('.main-pic').on('click', function () {
             $('.pic-modal').fadeIn();
         });
 
         //news hover to active
-        $('.news-list .pic').on('click',function(){
+        $('.news-list .pic').on('click', function () {
             $(this).toggleClass('active');
         });
 
@@ -48,7 +48,7 @@
         // });
 
         //fan hover to active
-        $('.fan-content .photo').on('click',function(){
+        $('.fan-content .photo').on('click', function () {
             $(this).toggleClass('active');
         });
 
@@ -58,30 +58,34 @@
         const cors = 'https://cors-anywhere.herokuapp.com/'
         const url = 'http://opendataap2.hl.gov.tw/resource/files/2020-12-25/c52ca4ca56bbad92e58a0774ea118be6.json';
 
-        axios.get(`${cors}${url}`).then(function(response){
+        axios.get(`${cors}${url}`).then(function (response) {
             data = response.data;
             // console.log(data);
-            // document.body.innerHTML = JSON.stringify(message)
             getPlan();
         });
 
-        function getPlan(){
+        function getPlan() {
             var str = '';
-            // message = Array.from(message);
-            data.forEach(function(openData){
+            var count = 0;
+            data.forEach(function (openData) {
                 // console.log(openData.Name);
-
-                if (openData.Name!==null) {
-                    var planContent = `<li class='project'>
-                    <div class='planName'><span class='text'>活動名稱：</span><span class='size'>${openData.Name}</span></div>
-                    <div class='description'><span class='text'>活動內容：</span><span class='test'>${openData.Description}</span></div>
-                    <div class='website'><span class='text'>參考資料：</span><a href='${openData.Website}' target='_blank' class='link-color'>${openData.Name}-活動介紹</a></div>
+                var planContent;
+                if (openData.Name !== null) {
+                    planContent = `<li class='project'>
+                    <img class='random' src="https://picsum.photos/id/${13 + count}/400/300" alt="">
+                    <div class='text'>
+                    <div class='planName'>${openData.Name}</div>
+                    <div class='description'>${openData.Description}</div>
+                    <div class='website'><a href='${openData.Website}' target='_blank' class='link-color'>查看更多</a></div>
+                    </div>
                     </li>`;
-                str += planContent;
+                    str += planContent;
+                    count += 1;
                 }
                 else {
                     return;
                 }
+                console.log(count);
             });
             openData.innerHTML = str;
         }

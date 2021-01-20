@@ -18,7 +18,7 @@
             flex-wrap: wrap;
         }
         &+.item {
-            margin-top: $middle;
+            margin-top: $large;
             @include mobile {
                 margin-top: $middle-md;
             }
@@ -180,7 +180,7 @@
         }
         @include mobile {
             width: 70%;
-            padding-top: 12%;
+            padding-top: 13%;
         }
     }
     .img-1 {
@@ -197,84 +197,87 @@
         }
     }
     .openData {
-        // display: flex;
         width: 95%;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         .project {
-            padding: $small $small-md;
-            border: 1px solid $color-primary;
+            width: 32%;
             border-radius: $small-md;
             background-color: $color-white;
-            &:nth-child(n+2) {
-                margin-top: $middle-md;
-            }
+            box-shadow: 0 0 8px 4px #bbb;
+            position: relative;
             @include mobile {
-                padding: $small;
+                width: 100%;
+                box-shadow: 0 0 3px 3px #bbb;
+                &+.project {
+                    margin-top: $middle-md;
+                }
             }
         }
-        .planName,
-        .description,
-        .website {
-            font: normal normal normal 24px/36px "Lato", "Noto Sans TC", sans-serif;
+        .text {
+            padding: $small;
             @include pad {
-                font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif;
+                padding: $small-md;
+            }
+        }
+        .random {
+            border-radius: $small-md $small-md 0 0;
+        }
+        .planName {
+            font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+            color: $color-primary;
+            text-align: center;
+            @include pad {
+                font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+            }
+            @include mobile {
+                font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+            }
+        }
+        .description {
+            font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif;
+            padding: $small 0 $middle;
+            @include pad {
+                font: normal normal normal 12px/14px "Lato", "Noto Sans TC", sans-serif;
+                padding: $small-md 0 $middle;
             }
             @include mobile {
                 font: normal normal normal 14px/21px "Lato", "Noto Sans TC", sans-serif;
             }
         }
-        .planName {
-            color: $color-primary;
-            font-weight: bold;
-        }
-        .description {
-            display: flex;
-            margin-top: $small;
-            @include pad {
-                margin-top: $small-md;
-            }
-            @include mobile {
-                flex-wrap: wrap;
-            }
-            .text {
-                width: 11.7%;
-                @include pad {
-                    width: 12.7%;
-                }
-                @include mobile {
-                    width: 100%;
-                }
-            }
-            .test {
-                width: 87.3%;
-                @include mobile {
-                    width: 100%;
-                }
-            }
-        }
         .website {
-            margin-top: $small;
+            width: 30%;
+            text-align: center;
+            font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+            border: 1px solid $color-primary;
+            border-radius: $small-sm;
+            position: absolute;
+            bottom: $small-lg;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
             @include pad {
-                margin-top: $small-md;
+                width: 40%;
+                font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif;
+                bottom: $small-sm;
             }
-        }
-        .text {
-            color: $color-block;
-            font-weight: bold;
             @include mobile {
-                display: block;
+                width: 25%;
+                bottom: $small-md;
+                font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
             }
         }
         .link-color {
-            color: $color-info-2;
+            display: block;
+            padding: $small-sm;
+            color: $color-primary;
+            border-radius: $small-sm;
             transition: .5s;
             &:hover {
-                color: $color-primary;
-            }
-        }
-        .size {
-            @include mobile {
-                font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+                background-color: $color-primary;
+                color: $color-block;
             }
         }
     }
