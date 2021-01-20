@@ -51,5 +51,39 @@
         $('.fan-content .photo').on('click',function(){
             $(this).toggleClass('active');
         });
+
+        //openData
+        var openData = document.querySelector('.openData');
+        var data;
+        const cors = 'https://cors-anywhere.herokuapp.com/'
+        const url = 'http://opendataap2.hl.gov.tw/resource/files/2020-12-25/c52ca4ca56bbad92e58a0774ea118be6.json';
+
+        axios.get(`${cors}${url}`).then(function(response){
+            data = response.data;
+            // console.log(data);
+            // document.body.innerHTML = JSON.stringify(message)
+            getPlan();
+        });
+
+        function getPlan(){
+            var str = '';
+            // message = Array.from(message);
+            data.forEach(function(openData){
+                // console.log(openData.Name);
+
+                if (openData.Name!==null) {
+                    var planContent = `<li class='project'>
+                    <div class='planName'><span class='text'>活動名稱：</span><span class='size'>${openData.Name}</span></div>
+                    <div class='description'><span class='text'>活動內容：</span><span class='test'>${openData.Description}</span></div>
+                    <div class='website'><span class='text'>參考資料：</span><a href='${openData.Website}' target='_blank' class='link-color'>${openData.Name}-活動介紹</a></div>
+                    </li>`;
+                str += planContent;
+                }
+                else {
+                    return;
+                }
+            });
+            openData.innerHTML = str;
+        }
     });
 })();
