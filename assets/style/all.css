@@ -215,7 +215,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.5); }
   .banner .bg-img {
     width: 50%;
     padding-top: 8%;
@@ -1250,13 +1250,14 @@ img {
         margin-top: 16px; } }
 
 .news-list {
-  background-color: #EEE6DB; }
+  background-color: #EEE6DB;
+  padding: 24px 0; }
+  @media (max-width: 767px) {
+    .news-list {
+      padding: 16px 0; } }
   .news-list .list {
-    width: 100%;
-    padding: 36px 0; }
-    @media (max-width: 767px) {
-      .news-list .list {
-        padding: 24px 0; } }
+    width: 95%;
+    margin: 0 auto; }
   .news-list .item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1410,6 +1411,107 @@ img {
         .news-list .more:hover {
           color: #ffffff;
           background-color: #FF541C; } }
+  .news-list .planTitle {
+    width: 35%;
+    padding-top: 8%;
+    background-position: center color;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto; }
+    @media (max-width: 1024px) {
+      .news-list .planTitle {
+        width: 45%; } }
+    @media (max-width: 767px) {
+      .news-list .planTitle {
+        width: 70%;
+        padding-top: 12%; } }
+  .news-list .img-1 {
+    background-image: url("../images/News/info.png"); }
+    @media (max-width: 1024px) {
+      .news-list .img-1 {
+        margin-bottom: 16px; } }
+  .news-list .img-2 {
+    background-image: url("../images/News/activity.png");
+    margin-top: 36px; }
+    @media (max-width: 1024px) {
+      .news-list .img-2 {
+        margin: 16px auto; } }
+  .news-list .openData {
+    width: 95%;
+    margin: 0 auto; }
+    .news-list .openData .project {
+      padding: 16px 8px;
+      border: 1px solid #FF541C;
+      border-radius: 8px;
+      background-color: #ffffff; }
+      .news-list .openData .project:nth-child(n+2) {
+        margin-top: 24px; }
+      @media (max-width: 767px) {
+        .news-list .openData .project {
+          padding: 16px; } }
+    .news-list .openData .planName,
+    .news-list .openData .description,
+    .news-list .openData .website {
+      font: normal normal normal 24px/36px "Lato", "Noto Sans TC", sans-serif; }
+      @media (max-width: 1024px) {
+        .news-list .openData .planName,
+        .news-list .openData .description,
+        .news-list .openData .website {
+          font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif; } }
+      @media (max-width: 767px) {
+        .news-list .openData .planName,
+        .news-list .openData .description,
+        .news-list .openData .website {
+          font: normal normal normal 14px/21px "Lato", "Noto Sans TC", sans-serif; } }
+    .news-list .openData .planName {
+      color: #FF541C;
+      font-weight: bold; }
+    .news-list .openData .description {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 16px; }
+      @media (max-width: 1024px) {
+        .news-list .openData .description {
+          margin-top: 8px; } }
+      @media (max-width: 767px) {
+        .news-list .openData .description {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+      .news-list .openData .description .text {
+        width: 11.7%; }
+        @media (max-width: 1024px) {
+          .news-list .openData .description .text {
+            width: 12.7%; } }
+        @media (max-width: 767px) {
+          .news-list .openData .description .text {
+            width: 100%; } }
+      .news-list .openData .description .test {
+        width: 87.3%; }
+        @media (max-width: 767px) {
+          .news-list .openData .description .test {
+            width: 100%; } }
+    .news-list .openData .website {
+      margin-top: 16px; }
+      @media (max-width: 1024px) {
+        .news-list .openData .website {
+          margin-top: 8px; } }
+    .news-list .openData .text {
+      color: #121212;
+      font-weight: bold; }
+      @media (max-width: 767px) {
+        .news-list .openData .text {
+          display: block; } }
+    .news-list .openData .link-color {
+      color: #CCA838;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .news-list .openData .link-color:hover {
+        color: #FF541C; }
+    @media (max-width: 767px) {
+      .news-list .openData .size {
+        font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif; } }
 
 .order-menu {
   padding: 36px 0;
