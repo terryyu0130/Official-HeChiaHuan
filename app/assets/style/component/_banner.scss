@@ -19,7 +19,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.3);
         // background-color: $color-footer-bg;
     }
     .bg-img {
@@ -75,7 +75,7 @@
 // banner-index
 .banner-index {
     background-position: center top;
-    background-image: url("../images/Banner/index.png");
+    background-image: url("../images/Banner/index-.jpg");
     @include pad {
         background-size: 100%;
         padding-top: 60%;
@@ -95,7 +95,7 @@
 
 // banner-news
 .banner-news {
-    background-image: url("../images/Banner/news.png");
+    background-image: url("../images/Banner/news-.jpg");
     .title {
         background-image: url("../images/Header/header_1.png");
     }
@@ -103,7 +103,7 @@
 
 // banner-aboutUs
 .banner-aboutUs {
-    background-image: url("../images/Banner/aboutUs.png");
+    background-image: url("../images/Banner/aboutUs-.jpg");
     .title {
         background-image: url("../images/Header/header_2.png");
     }
@@ -111,7 +111,7 @@
 
 // banner-menu
 .banner-menu {
-    background-image: url("../images/Banner/menu.png");
+    background-image: url("../images/Banner/menu-.jpg");
     .title {
         background-image: url("../images/Header/header_3.png");
     }
@@ -119,7 +119,7 @@
 
 // banner-QA
 .banner-QA {
-    background-image: url("../images/Banner/QA.png");
+    background-image: url("../images/Banner/QA-.jpg");
     .title {
         background-image: url("../images/Header/header_4.png");
     }
@@ -127,7 +127,7 @@
 
 // banner-contactUs
 .banner-contactUs {
-    background-image: url("../images/Banner/contactUs.png");
+    background-image: url("../images/Banner/contactUs-.jpg");
     .title {
         background-image: url("../images/Header/header_5.png");
     }
@@ -135,7 +135,7 @@
 
 // banner-fanPage
 .banner-fanPage {
-    background-image: url("../images/Banner/fanPage.png");
+    background-image: url("../images/Banner/fanPage-.jpg");
     .title {
         background-image: url("../images/Header/header_6.png");
     }
