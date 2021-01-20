@@ -8,6 +8,7 @@
     .list {
         width: 95%;
         margin: 0 auto;
+        box-shadow: 0 0 8px 6px #0000000a;
     }
     .item {
         display: flex;
@@ -206,11 +207,10 @@
             width: 32%;
             border-radius: $small-md;
             background-color: $color-white;
-            box-shadow: 0 0 8px 4px #bbb;
+            box-shadow: 0 0 8px 6px #0000000a;
             position: relative;
             @include mobile {
                 width: 100%;
-                box-shadow: 0 0 3px 3px #bbb;
                 &+.project {
                     margin-top: $middle-md;
                 }
